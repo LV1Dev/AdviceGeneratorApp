@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(218, 23%, 16%);
+    font-family: "Manrope", sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.card {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 18px;
+    box-shadow: 0 20px 35px hsl(219, 26%, 13%);
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: 350px;
+}
+.btn {
+    position: absolute;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    color: hsl(218, 23%, 16%);
+    cursor: pointer;
+    top: calc(50% + 215px - 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 70px;
+    transition-duration: 1s;
+    padding: 0.5em;
+}
+.btn:hover {
+    color: hsl(150, 100%, 66%);
+    box-shadow: 0 0px 45px hsl(150, 95%, 64%);
+    transition-duration: 1s;
+}
+.quote {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 30px;
+    letter-spacing: 0.1vh;
+    color: hsl(193, 38%, 86%);
+}
+.id {
+    margin-top: 30px;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 0.5vh;
+    font-size: 12px;
+}
+.btn img {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.deco {
+    position: absolute;
+    top: calc(50% + 130px - 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.deco-small {
+    background-image: url('images/pattern-divider-mobile.svg');
+  }
+  @media screen and (max-width: 768px) {
+    .deco {
+      display: none;
+    }
+    .deco-small {
+        display: block !important;
+        position: absolute;
+        top: calc(50% + 60px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  }
